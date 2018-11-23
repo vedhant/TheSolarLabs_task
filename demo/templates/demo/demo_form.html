@@ -1,0 +1,37 @@
+{% load static from static %}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{%static 'styles_demo.css' %}">
+		<link rel="shortcut icon" href="{% static 'assets/logo.png' %}" />
+		<title>The Solar Labs</title>
+	</head>
+	<body>
+		<div id="navbar">
+			<img id="logo" src="{% static 'assets/logo.png' %}" alt="">
+			<i class="fa fa-bars"></i>
+			<div id="links">
+				<a href="/">HOME</a>
+				<a href="#">ABOUT US</a>
+				<a href="#">PRICING</a>
+				<a href="#">BLOG</a>
+			</div>
+		</div>
+		<div class="main_wrapper">
+			<h1>BOOK A DEMO</h1>
+			{% if error %}
+			<h2 id="error">Either invalid Entries or there is a problem submitting your details!</h2>
+			{% endif %}
+			<form method="POST" action="/demo/">
+				{% csrf_token %}
+				{{form}}
+				<input type="submit" value="BOOK NOW">
+			</form>
+		</div>
+		<script src="{% static 'demo.js' %}"></script>
+	</body>
+</html>

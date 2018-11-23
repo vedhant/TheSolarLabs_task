@@ -1,0 +1,349 @@
+html, body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@font-face{
+	font-family: custom1;
+	src: url(assets/Gotham-Book_7.woff);
+}
+
+@font-face{
+	font-family: custom2;
+	src: url(assets/Gotham-Light_9.woff);
+}
+
+@font-face{
+	font-family: custom3;
+	src: url(assets/Gotham-Medium_8.woff);
+}
+
+#navbar{
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: white;
+}
+
+#navbar #links a{
+	text-decoration: none;
+	font-family: custom1;
+	color: black;
+}
+
+#navbar #logo{
+	float: left;
+	width: 7%;
+	margin-left: 8%;
+	margin-top: 1.5%;
+}
+
+.main_wrapper{
+	width: 100%;
+	text-align: center;
+	margin-top: 5.5%;
+}
+#top{
+	width: 38%;
+}
+
+.main_wrapper h1{
+	font-family: custom3;
+	font-size: 2.2em;
+	font-weight: 580;
+	padding-top: 5%;
+}
+
+.main_wrapper p{
+	font-family: custom2;
+	font-size: 1.6em;
+}
+
+#trusted_head{
+	font-size: 2.3em;
+	padding-top: 2%;
+}
+
+#buttons{
+	width: 35%;
+	margin: auto;
+	display: inline-block;
+	font-family: custom2;
+	font-size: 1.3em;
+	margin-top: 3%;
+}
+
+#companies_img{
+	margin-top: 3%;
+	width: 60%;
+}
+
+#only_soft_head{
+	padding-top: 1%;
+}
+
+#only_soft_desc{
+	padding-top: 2%;
+	font-size: 1.8em;
+}
+
+#only_soft_img{
+	margin-top: 7%;
+	width: 70%;
+}
+
+#book:hover{
+	color: white;
+	background: black;
+}
+#knowmore:hover{
+	color: white;
+	background: black;
+}
+#book, #knowmore{
+	transition: 0.4s;
+}
+#profile_wrapper{
+	margin: auto;
+	min-height: 20vh;
+	width: 70%;
+	display: inline-block;
+}
+#quote_start{
+	width: 7%;
+	display: inline-block;
+}
+#quote_start img{
+	width: 100%;
+}
+#profile img{
+	display: inline-block;
+	width: 10%;
+}
+#profile > div{
+	width: 100%;
+	display: inline-block;
+	min-height: 5vw;
+}
+#profile h1{
+	font-size: 0.9em;
+	font-weight: 500;
+	font-family: custom2;
+	text-align: left;
+	margin-bottom: 0;
+	margin-top: 2%;
+}
+#profile_name{
+	width: 70%;
+	display: inline-block;
+	float: left;
+}
+#profile p{
+	margin-top: 10px;
+	font-size: 0.7em;
+	font-weight: 400;
+	opacity: 0.7;
+}
+#profile_logo{
+	float: right;
+	width: 27%;
+	margin: auto;
+}
+#profile_logo img{
+	width: 95%;
+	padding-top: 20%;
+}
+
+@media screen and (min-width: 601px) {
+	#navbar{
+		height: 12vh;
+		display: table;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+	}
+	#navbar i{
+		display: none;
+	}
+	#navbar #links{
+		display: inline-block;
+		height: 100%;	
+		display: table;
+		margin: auto;
+	}
+	#navbar #links a{
+		display: table-cell;
+		vertical-align: middle;
+		width: 15%;
+		font-size: 1.2em;
+	}
+	#navbar .active{
+		color: white !important;
+		background: black;
+		border-radius: 40px;
+		padding-left: 15%;
+		padding-right: 15%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	#book{
+		float: left;
+		min-width: 46%;
+		height: 7vh;
+		line-height: 7vh;
+		border: 2px solid black;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	#knowmore{
+		float: right;
+		min-width: 46%;
+		height: 7vh;
+		line-height: 7vh;
+		border: 2px solid black;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	#profile_pic{
+		float: left;
+		width: 30%;
+		min-height: 25vh;
+	}
+	#profile_pic img{
+		margin-top: 5%;
+		width: 60%;
+		border-radius: 50%;
+		float: left;
+	}
+	#profile{
+		float: right;
+		width: 60%;
+		min-height: 25vh;
+		font-family: custom2;
+		font-size: 2.7em;
+		padding-top: 3%;
+		font-weight: 600;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#navbar{
+		position: fixed;
+	}
+	#navbar #logo{
+		width: 25%;
+		margin: 2%;
+	}
+	#navbar i{
+		float: right;
+		font-size: 1.8em;
+		margin: 3%;
+	}
+	#navbar #links{
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+	#navbar #links a{
+		width: 100%;
+		display: block;
+		padding-left: 5%;
+		padding-top: 2.5%;
+		padding-top: 2.5%;
+	}
+	#top{
+		margin-top: 10vh;
+		width: 70%;
+	}
+	.main_wrapper h1{
+		font-size: 1.4em;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.main_wrapper p{
+		font-size: 1em;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#buttons{
+		width: 65%;
+		font-size: 1em;
+	}
+	#book{
+		width: 90%;
+		height: 7vh;
+		line-height: 7vh;
+		border: 2px solid black;
+		border-radius: 4px;
+		margin: 2%;
+	}
+	#knowmore{
+		margin: 2%;
+		width: 90%;
+		height: 7vh;
+		line-height: 7vh;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+	#trusted_head{
+		font-size: 1.5em;
+		padding-top: 2%;
+	}
+	#companies_img{
+		width: 95%;
+	}
+
+	#only_soft_desc{
+		font-size: 1.1em;
+	}
+	#only_soft_img{
+		width: 95%;
+	}
+	#profile_wrapper{
+		width: 95%;
+	}
+	#profile_pic{
+		margin: auto;
+		width: 70%;
+		min-height: 25vh;
+	}
+	#profile_pic{
+		margin: auto;
+		width: 40%;
+		min-height: 10vh;
+	}
+	#profile_pic img{
+		margin: auto;
+		margin-top: 5%;
+		width: 80%;
+		border-radius: 50%;
+	}
+	#quote_start{
+		float: left;
+		display: inline-block;
+		margin-left: 4%;
+	}
+	#profile{
+		margin: auto;
+		width: 70%;
+		min-height: 15vh;
+		font-family: custom2;
+		font-size: 1em;
+		padding-top: 3%;
+		font-weight: 600;
+		text-align: left;
+	}
+	#navbar .active{
+		color: white !important;
+		background: black;
+		border-radius: 40px;
+		padding-left: 5%;
+		padding-right: 5%;
+		/*padding-top: 2%;*/
+		/*padding-bottom: 2%;*/
+	}
+}

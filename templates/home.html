@@ -1,0 +1,67 @@
+{% load static from static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{%static 'styles.css' %}">
+		<link rel="shortcut icon" href="{% static 'assets/logo.png' %}" />
+		<title>The Solar Labs</title>
+	</head>
+	<body>
+		<div id="navbar">
+			<img id="logo" src="{% static 'assets/logo.png' %}" alt="">
+			<i class="fa fa-bars"></i>
+			<div id="links">
+				<a href="/"><span class="active">HOME</span></a>
+				<a href="#">ABOUT US</a>
+				<a href="#">PRICING</a>
+				<a href="#">BLOG</a>
+			</div>
+		</div>
+		<div class="main_wrapper">
+			<img src="{% static 'assets/top.png' %}" id="top" alt="">
+			<h1>AI powered Software for Solar System Design</h1>
+			<p>Reduce engineering time and optimize system design for higher energy generation</p>
+			<div id="buttons">
+				<div id="book">BOOK A DEMO</div>
+				<div id="knowmore">KNOW MORE</div>
+			</div>
+		</div>
+		<div class="main_wrapper">
+			<h1 id="trusted_head">Trusted by Solar Industry Leaders around the World</h1>
+			<img src="{% static 'assets/companies.bmp' %}" id="companies_img" alt="">
+		</div>
+		<div class="main_wrapper">
+			<h1 id="only_soft_head">The only software for solar you'll ever need</h1>
+			<p id="only_soft_desc">Make a beautiful sales quotations with an address and electricity bill</p>
+			<img src="{% static 'assets/sample.png' %}" id="only_soft_img" alt="">
+		</div>
+		<div class="main_wrapper">
+			<div id="profile_wrapper">
+				<div id="profile_pic">
+					<img src="{% static 'assets/profile.jpg' %}" alt="">
+				</div>
+				<div id="quote_start"><img src="{% static 'assets/quote.png' %}" alt=""></div>
+				<div id="profile">
+					Lorem ipsum dolor sit amet,
+					consectetuer adipiscing elit,
+					sed diam nonummy nibh
+					euismod tincidunt ut lao.
+					<img src="{% static 'assets/quote.png' %}" alt="">
+					<div>
+						<div id="profile_name">
+							<h1>Siddharth</h1>
+							<p>Cheif Executive Officer</p>
+						</div>
+						<div id="profile_logo">
+							<img src="{% static 'assets/logo.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="{% static 'home.js' %}"></script>
+	</body>
+</html>
